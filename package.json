@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "to_github": "ng build --output-path docs"
+    "to_github": "ng build --output-path docs --base-href introduction-to-web"
   },
   "private": true,
   "dependencies": {
