@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: fantasy;
+}
+
+.page {
+  margin: 24px 0 0 0;
+  padding: 16px;
+  border: 2px solid #efefef;
+  box-shadow: 0 0 5px #efefef;
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    text-decoration: underline;
+  }
+}

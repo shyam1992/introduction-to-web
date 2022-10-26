@@ -1,0 +1,29 @@
+
+.header {
+   height: 60px;
+   background-color: #3476D2;
+   display: flex;
+   justify-content: center;
+   color: white;
+}
+
+.content {
+   display: grid;
+   grid-template-columns: 2fr 8fr 2fr;
+}
+
+.footer {
+   display: grid;
+   grid-template-columns: 6fr 6fr;
+   padding: 24px;
+   justify-items: center;
+   button {
+      height: 50px;
+      width: 300px;
+      background-color: transparent;
+      border-radius: 20px;
+      color: #3476D2;
+      border-color: #3476D2;
+      font-size: 18px;
+   }
+}
