@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'introduction-to-web';
+  currentRouteIndex = 0
+  routes = ['', 'tools','buildnig-blocks', 'html', 'css', 'js']
+
+  constructor(private router: Router ) {}
+
+  navigateToPrev() {
+    if(this.currentRouteIndex > 0) {
+      this.currentRouteIndex = this.currentRouteIndex - 1
+      this.router.navigate([this.routes[this.currentRouteIndex]])
+    }
+  }
+  navigateToNext() {
+    if(this.currentRouteIndex < this.routes.length -1) {
+      this.currentRouteIndex = this.currentRouteIndex + 1
+      this.router.navigate([this.routes[this.currentRouteIndex]])
+    }
+  }
+
 }
