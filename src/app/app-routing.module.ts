@@ -1,3 +1,5 @@
+import { FrameworksComponent } from './frameworks/frameworks.component';
+import { ConclusionComponent } from './conclusion/conclusion.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { StylingsComponent } from './stylings/stylings.component';
 import { CommonTagsComponent } from './common-tags/common-tags.component';
@@ -33,8 +35,16 @@ const routes: Routes = [
     component: JavascriptComponent
   },
   {
+    path: 'frameworks',
+    component: FrameworksComponent
+  },
+  {
+    path: 'end',
+    component: ConclusionComponent
+  },
+  {
     path: '**',
-    redirectTo: 'tools'
+    redirectTo: ''
   }
 ];
 

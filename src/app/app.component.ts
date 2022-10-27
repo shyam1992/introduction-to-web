@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class AppComponent {
   title = 'introduction-to-web';
   currentRouteIndex = 0
-  routes = ['/', 'tools','buildnig-blocks', 'html', 'css', 'js']
+  routes = ['/', 'tools', 'buildnig-blocks', 'html', 'css', 'js', 'frameworks', 'end']
 
   constructor(private router: Router) {}
 
