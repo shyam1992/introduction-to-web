@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,12 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'introduction-to-web';
   currentRouteIndex = 0
-  routes = ['', 'tools','buildnig-blocks', 'html', 'css', 'js']
+  routes = ['/', 'tools','buildnig-blocks', 'html', 'css', 'js']
 
-  constructor(private router: Router ) {}
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+  }
 
   navigateToPrev() {
     if(this.currentRouteIndex > 0) {
